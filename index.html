@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manajemen Data Buku</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Manajemen Data Buku</h1>
+
+    <form id="add-book-form">
+      <input type="text" id="title" placeholder="Judul Buku" required>
+      <input type="text" id="author" placeholder="Penulis" required>
+      <input type="number" id="year" placeholder="Tahun Terbit" required>
+      <select id="status">
+        <option value="belum">Belum Selesai Dibaca</option>
+        <option value="selesai">Selesai Dibaca</option>
+      </select>
+      <button type="submit">Tambah Buku</button>
+    </form>
+
+    <div class="bookshelf">
+      <div class="shelf">
+        <h2>Belum Selesai Dibaca</h2>
+        <ul id="unfinished-books" class="books"></ul>
+      </div>
+      <div class="shelf">
+        <h2>Selesai Dibaca</h2>
+        <ul id="finished-books" class="books"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
